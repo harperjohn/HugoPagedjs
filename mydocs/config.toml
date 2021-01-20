@@ -1,3 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+# https://gohugo.io/hugo-modules/theme-components/#readout
+# priority is left to right
+theme = [ "book"]

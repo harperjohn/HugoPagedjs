@@ -1,3 +1,6 @@
 [submodule "mydocs/themes/book"]
 	path = mydocs/themes/book
 	url = https://github.com/alex-shpak/hugo-book
+[submodule "mydocs/themes/pagedjs"]
+	path = mydocs/themes/pagedjs
+	url = https://gitlab.pagedmedia.org/julientaq/pagedjs-hugo.git
