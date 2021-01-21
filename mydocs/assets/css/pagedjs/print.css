@@ -1,0 +1,42 @@
+@media print {
+
+  nav, .book-header {
+    display: none;
+  }
+
+  /* h1 will be used to define running head */
+  h1 {
+    string-set: title content(text);
+  }
+
+  @page  {
+    background: orange;
+    size: A4;
+    margin-top: 15mm;
+    margin-left: 20mm;
+    margin-right: 15mm;
+    margin-bottom: 25mm;
+
+    @bottom-center  {
+      content: element(footer);
+    }
+
+    @top-right  {
+      color: red;
+      content: counter(page);
+      font-size: 0.7em;
+    }
+
+    @bottom-right  {
+      color: red;
+      content: counter(page);
+      font-size: 0.7em;
+    }
+
+    @bottom-left  {
+      content: string(title) counter(page);
+      
+      font-size: 0.7em;
+    }
+  }
+}
